@@ -1,5 +1,5 @@
 '''
-A Netcat network tool written in Python. You don't need to change anything to run the program, just read the help message if you don't know how to use it.
+A Netcat network tool written in Python. You don't need to change anything to run the program, just read the help message if you don't know how to use it. Use CTRL-D to send the EOF (End of file) marker.
 '''
 # Import needed packages
 import argparse
