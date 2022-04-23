@@ -1,5 +1,7 @@
 '''
 A Netcat network tool written in Python. You don't need to change anything to run the program, just read the help message if you don't know how to use it. Use CTRL-D to send the EOF (End of file) marker.
+
+Netcat is the utility knife of networking, so it's no surprise that shrewd systems administrators remove it from their systems. Such a useful tool would be quite an asset if an attacker managed to find a way in. With it, you can read and write data across the network, meaning you can use it to execute remote commands, pass files back and forth, or even open a remote shell.
 '''
 # Import needed packages
 import argparse
