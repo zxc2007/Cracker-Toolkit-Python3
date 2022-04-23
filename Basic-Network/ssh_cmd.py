@@ -6,7 +6,7 @@ A SSH tool built with Python.
 The Netcat tool we built is pretty handy, but sometimes it's wise to encrypt your traffic to avoid detection. A common means of doing so is to tunnel the traffic using Secure Shell (SSH). But what if your target doesn't have an SSH client, just like 99.81943 percent of Windows systems? That is why we will need to build a SSH tool using Python.
 '''
 # Import needed packages
-import paramiko
+import paramiko # Use "pip install paramiko" to install the package
 
 # Create a SSH Client, connect to the host, and send the command.
 def ssh_command(ip, port, user, passwd, cmd):
