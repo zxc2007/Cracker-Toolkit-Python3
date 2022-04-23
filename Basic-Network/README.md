@@ -57,3 +57,13 @@ ftp 127.0.0.1
 ```bash
 python3 ssh_cmd.py
 ```
+
+## ssh_rcmd.py and ssh_server.py
+### Server side
+```bash
+python3 ssh_server.py
+```
+### Client
+```bash
+python3 ssh_rcmd.py
+```
