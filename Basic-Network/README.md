@@ -51,3 +51,9 @@ On another terminal:
 ```bash
 ftp 127.0.0.1
 ```
+
+## ssh_cmd.py
+### Connect to Linux server
+```bash
+python3 ssh_cmd.py
+```
