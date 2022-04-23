@@ -1,9 +1,16 @@
 #!/usr/bin/env python
-import paramiko
+
+'''
+The reverse for ssh_cmd.py
+
+Modified ssh_cmd.py so that it can run commands on Windows client over SSH. Because most versions of Windows don't include an SSH server out of the box, we need to reverse ssh_cmd.py and send commands from an server to the client.
+'''
+# Import needed packages
+import paramiko # Use "pip install paramiko" to install the package
 import shlex
 import subprocess
 
-
+# Create a SSH object, and send the command to the client
 def ssh_command(ip, port, user, passwd, command):
     client = paramiko.SSHClient()
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -27,11 +34,11 @@ def ssh_command(ip, port, user, passwd, command):
         client.close()
     return
 
-
+# Run the program
 if __name__ == '__main__':
-    import getpass
+    import getpass # Needed to hide password
     user = getpass.getuser()
-    password = getpass.getpass()
+    password = getpass.getpass() # Hide the password during the input
 
     ip = input('Enter server IP: ')
     port = input('Enter port: ')
