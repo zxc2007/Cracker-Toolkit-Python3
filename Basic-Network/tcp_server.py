@@ -1,5 +1,7 @@
 '''
 A multithreaded simple TCP server written in Python with socket and threading package. Change the parameters highlighted in the file to your own before running it.
+
+You might want to use your own TCP server when writing command shells or crafting a proxy.
 '''
 # Import needed packages
 import socket
